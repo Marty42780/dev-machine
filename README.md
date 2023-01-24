@@ -23,11 +23,12 @@ docker run -d \
     -p 22:22 \
     -p 44:44 \
     -v path/to/workspace:/root/workspace \
+    -v path/to/autorized_keys:/root/.ssh/authorized_keys \
     --restart unless-stopped \ 
 ```
 ### Parameters
 
-|Column1              |Column2  |
+| Parameter | Usage  |
 |---------------------|---------|
 | -e zshrc  | URL of your .zshrc (optional) |
 | -e vimrc  | URL of your .zshrc (optional) |

@@ -21,7 +21,7 @@ git config --global init.defaultBranch main
 # Start SSH server
 /usr/sbin/sshd -D &
 # Start File server
-http-server ~/workspace -p 44000 -c-1 &
+http-server ~/workspace -p 44 -c-1 &
 
 # Wait for any process to exit
 wait -n

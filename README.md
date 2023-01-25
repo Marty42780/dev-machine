@@ -20,6 +20,8 @@ docker run -d \
     -e zshrc="" \
     -e vimrc="" \
     -e plugdl="" \
+    -e gitemail="" \
+    -e gitname="" \
     -p 22:22 \
     -p 44:44 \
     -v path/to/workspace:/root/workspace \
@@ -28,13 +30,15 @@ docker run -d \
 ```
 ### Parameters
 
-| Parameter | Usage  |
-|---------------------|---------|
-| -e zshrc  | URL of your .zshrc (optional) |
-| -e vimrc  | URL of your .zshrc (optional) |
-| -e plugdl | URL of the bash script to run to install your zsh and vim plugins |
-| -p 22:22  | SSH server port |
-| -p 44:44  | Http File server |
+| Parameter   | Usage                                                             |
+|--- ---------|-------------------------------------------------------------------|
+| -e zshrc    | URL of your .zshrc (optional)                                     |
+| -e vimrc    | URL of your .zshrc (optional)                                     |
+| -e plugdl   | URL of the bash script to run to install your zsh and vim plugins |
+| -e gitemail |	Your Git email                                                    |
+| -e gitname  | Your Git username                                                 |
+| -p 22:22    | SSH server port                                                   |
+| -p 44:44    | Http File server 						  |
 
 For the url, I recommend hosting the files on a github repo and using the url `raw.githubusercontent.com/...`.
 

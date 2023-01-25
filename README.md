@@ -31,7 +31,7 @@ docker run -d \
 ### Parameters
 
 | Parameter   | Usage                                                             |
-|--- ---------|-------------------------------------------------------------------|
+|-------------|-------------------------------------------------------------------|
 | -e zshrc    | URL of your .zshrc (optional)                                     |
 | -e vimrc    | URL of your .zshrc (optional)                                     |
 | -e plugdl   | URL of the bash script to run to install your zsh and vim plugins |

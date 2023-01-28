@@ -8,6 +8,9 @@ Code inside a docker container with SSH, you can use VSCode, Vim, Nano or any ss
 
 + Packages pre-installed: `apt`, `git`, `python`, `pip`, `npm`, `tmux`, `curl`, `wget`, `vim`.
 
+> **Note**
+> Fork the project to change the shell or add the packages you need
+
 ## Installation
 
 Here is an example to get you started with the dev-machine.

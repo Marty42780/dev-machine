@@ -25,8 +25,12 @@ git config --global user.name ${gitname}
 
 # Start SSH server
 /usr/sbin/sshd -D &
+
 # Start File server
 http-server ~/workspace -p 44 -c-1 &
+
+# Start Wetty Server
+wetty &
 
 # Wait for any process to exit
 wait -n

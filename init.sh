@@ -23,6 +23,9 @@ git config --global init.defaultBranch main
 git config --global user.email ${gitemail}
 git config --global user.name ${gitname}
 
+# Set up languages
+locale-gen --purge en_US.UTF-8
+
 # Start SSH server
 /usr/sbin/sshd -D &
 

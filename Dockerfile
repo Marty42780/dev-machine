@@ -9,5 +9,6 @@ ENV LANG=en_US.UTF-8
 RUN sed -i -e "s/# $LANG.*/$LANG UTF-8/" /etc/locale.gen && \
     dpkg-reconfigure --frontend=noninteractive locales && \
     update-locale LANG=$LANG
+RUN service ssh start
 EXPOSE 22
 CMD [ "/init.sh" ]

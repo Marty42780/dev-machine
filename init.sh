@@ -1,12 +1,4 @@
 #!/bin/bash
-# Autorize root ssh connection
-echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
-
-# Download and install Oh-My-Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-# Set ZSH as default shell
-chsh -s $(which zsh)
 
 # Download Vim-Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
